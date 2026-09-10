@@ -1,27 +1,9 @@
-# Parcours français — Base Std
+# Parcours francais : base-std (standard B20 de Base)
 
-## Intention
-Ce dépôt rassemble les interfaces Solidity des précompilés Base. Pour CryptoAstuce, il sert de référence ABI lors de l’intégration de contrats DeFi et NFT.
+Lecture commentee du depot base/base-std : la bibliotheque Solidity qui documente les precompiles a etat B20 de Base (Factory, Policy Registry, Activation Registry) et le standard de token conforme qu elles font tourner nativement dans le client.
 
-## Architecture
-Repérer interfaces, bibliothèques et mocks, puis relier chaque signature au comportement réseau attendu.
+Sommaire :
 
-## Flux de données
-Suivre un appel depuis le contrat utilisateur jusqu’au précompilé, en notant encodage, retour et gestion d’erreur.
+Chapitre 1 Presentation de base-std et du standard B20. Chapitre 2 Precompiles contre contrats classiques. Chapitre 3 IB20Factory et createB20. Chapitre 4 La fenetre de bootstrap et les initCalls. Chapitre 5 Comment un token B20 est reconnu. Chapitre 6 IB20, le socle ERC-20 et les roles. Chapitre 7 Les quatre vecteurs de pause et la saisie. Chapitre 8 Le Policy Registry et les listes de conformite. Chapitre 9 Rattacher une policy a un token. Chapitre 10 IB20Asset et le multiplicateur d affichage. Chapitre 11 IB20Stablecoin, la variante simplifiee. Chapitre 12 L Activation Registry et l evolution du protocole. Chapitre 13 Limites et perimetre de ce parcours.
 
-## Sécurité
-Contrôler permissions, types, valeurs limites, reentrance et hypothèses sur l’adresse du précompilé.
-
-## Compatibilité Base
-Comparer les adresses, versions d’ABI et différences entre Base mainnet, Sepolia et tests locaux.
-
-## Lecture guidée
-Lire README, interfaces, mocks et tests dans cet ordre pour transformer l’ABI en intégration vérifiable.
-
-## Exploitation
-Conserver versions, paramètres RPC, journaux et procédure de diagnostic lors d’une évolution.
-
-## Glossaire
-Définir précompilé, ABI, mock, calldata et compatibilité sans reprendre un autre parcours.
-
-Parcours documentaire : aucun test ni déploiement exécuté.
+Ce parcours est une lecture pedagogique du code source et de la documentation du depot, sans installation ni execution du projet.
