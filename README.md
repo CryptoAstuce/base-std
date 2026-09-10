@@ -124,3 +124,8 @@ behavior diverges from the Solidity reference at the asserted slot.
 ## License
 
 MIT
+
+
+## Parcours francais
+
+Une lecture pedagogique en francais de ce depot est disponible dans docs/fr/README.md. Elle couvre les trois precompiles a etat (Factory, Policy Registry, Activation Registry), le cycle de creation d un token B20 via createB20, les roles et les quatre vecteurs de pause, le systeme de policies de conformite, et les deux variantes Asset et Stablecoin.
